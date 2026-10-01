@@ -1,0 +1,94 @@
+<h1>Que cazzo fai</h1>
+
+<form action="https://httpbin.org/post" method="post">
+
+    <fieldset>
+        <legend>Kapcsolat</legend>
+        <p>
+            <label for="nev">Név *</label><br>
+            <input type="text" id="nev" name="nev" required>
+        </p>
+        <p>
+            <label for="telelefon">Telefon *</label><br>
+            <input type="tel" id="telelefon" name="telefon" placeholder="+36 30 123 4567" required>
+        </p>
+        <p>
+            <label for="email">Ímél *</label><br>
+            <input type="email" id="email" name="email" placeholder="pelda@example.com" required>
+        </p>
+        <p>
+            <label for="szallitasi_cim">Szállítási cím *</label><br>
+            <input type="text" id="szallitasi_cim" name="szallitasi_cim" placeholder="6100, Kiskunfélegyháza, Kossuth utca 24." required>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>A pizza</legend>
+        <p>
+            <label for="fajta">Fajta *</label>
+            <select id="fajta" name="fajta" required>
+                <option value="">-- válassz --</option>
+                <option value="szalamis">Diavolo</option>
+                <option value="negysajt">Quattro formiaggi</option>
+                <option value="sonkas_kuko">Sonkás-kukoricás</option>
+                <option value="vasember">Vasember</option>
+                <option value="Hulk">Hulk</option>
+
+            </select>
+        </p>
+
+        <p><strong>Méret:</strong></p>
+        <p>
+            <input type="radio" id="meret1" name="meret" value="26" checked>
+            <label for="meret1">26 cm</label>
+            <input type="radio" id="meret2" name="meret" value="32">
+            <label for="meret2">32 cm</label>
+            <input type="radio" id="meret3" name="meret" value="64">
+            <label for="meret3">64 cm</label>
+            <input type="radio" id="meret4" name="meret" value="100">
+            <label for="meret4 ">Családi (100 cm)</label>
+        </p>
+
+        <p><strong>Extra feltét:</strong></p>
+        <p>
+            <input type="checkbox" id="extra1" name="extra" value="jalapeno">
+            <label for="extra1">Extra jalapeno</label>
+            <input type="checkbox" id="extra2" name="extra" value="rak">
+            <label for="extra2">Rák</label>
+            <input type="checkbox" id="extra3" name="extra" value="tojas">
+            <label for="extra3 ">Tojás</label>
+            <input type="checkbox" id="extra4" name="extra" value="cheddar">
+            <label for="extra4  ">Cheddar</label>
+
+        </p>
+
+        <p>
+            <label for="darab">Darab *</label>
+            <input type="number" id="darab" name="darab" value="1" min="1" max="20" required>
+        </p>
+        <p><strong>Fizetési mód:*</strong></p>
+        <p>
+            <input type="radio" id="fizetes1" name="fizetes" value="kartya" checked>
+            <label for="fizetes1">Bankkártya</label>
+            <input type="radio" id="fizetes2" name="fizetes" value="kp">
+            <label for="fizetes2">Készpénz</label>
+            <input type="radio" id="fizetes3" name="fizetes" value="online">
+            <label for="fizetes3">Online wallet</label>
+        </p>
+    </fieldset>
+
+    <p>
+        <label for="megj">Megjegyzés(nem kötelező)</label><br>
+        <textarea id="megj" name="megjegyzes" rows="3" cols="66"></textarea>
+    </p>
+
+    <p>
+        <input type="checkbox" id="felhasznalasi feltetelek" name="aszf" value="elfogadva" required>
+        <label for="aszf">Elfogadom a feltételeket *</label>
+    </p>
+    <p>
+        <input type="checkbox" id="hirl" name="hirl" value="elfogadva">
+        <label for="hirl">Felíratkozom a hírlevélre </label>
+    </p>
+    <button type="submit">Megrendelem</button>
+</form>
